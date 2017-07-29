@@ -1,0 +1,8 @@
+One moment, please...
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+  $( document ).ready(function() {
+    var fragment = window.location.hash.split('=')[1].split('&')[0]
+    window.location.href = '{{ url_for("token") }}?fragment='+fragment+'&respondent_id={{ respondent_id }}';
+  });
+</script>

@@ -1,0 +1,11 @@
+url: http://localhost:5000
+app-prefix: /twitter
+twitter:
+    consumer-key: CONSUMER-KEY
+    consumer-secret: CONSUMER-SECRET
+database:
+    host: localhost
+    port: 27017
+    db: DB-NAME
+    username: USERNAME
+    password: PASSWORD
