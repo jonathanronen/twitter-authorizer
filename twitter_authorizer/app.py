@@ -90,7 +90,13 @@ def callback_with_id(respondent_id):
         api = tweepy.API(auth)
         me = api.me()._json
         db.users.update_one({'request_token.oauth_token': request.args['oauth_token']},
-                            {'$set': {'user': me}})
+                            {'$set': {
+                                'user': me,
+                                'access_token': auth.access_token,
+                                'access_token_secret': auth.access_token_secret
+                                },
+                             '$unset': {'request_token': ''}
+                            })
 
         return redirect(url_for('thanks', userid=me['id']))
 
