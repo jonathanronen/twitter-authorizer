@@ -1,0 +1,11 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  paddint-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.jumbotron {
+    width: 800px;
+}

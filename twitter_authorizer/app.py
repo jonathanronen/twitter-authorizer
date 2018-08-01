@@ -42,7 +42,7 @@ def gototwitter():
                                callback_url)
 
 
-    try: 
+    try:
         #get the request tokens
         redirect_url= auth.get_authorization_url()
 
@@ -62,8 +62,8 @@ def gototwitter():
 def welcome_with_id(respondent_id):
     return render_template('welcome.html', respondent_id=respondent_id)
 
-@app.route(ROUTE_PREFIX + '/callback/<respondent_id>')
-def callback_with_id(respondent_id): 
+@app.route(ROUTE_PREFIX + '/callback')
+def callback_with_id():
     if 'denied' in request.args:
         db = get_db_connection()
         u = db.users.find_one({'request_token.oauth_token': request.args['denied']})
