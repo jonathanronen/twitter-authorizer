@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Humboldt Universität zu Berlin - "Politik und Medien</title>
+    <title>Princeton - Politics and Media</title>
 
     <!-- Bootstrap -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -19,12 +19,12 @@
     <![endif]-->
   </head>
   <body>
-    <img src="{{url_for('static', filename='germany-logo.png')}}"/>
+    <img src="{{url_for('static', filename='logo-polmed-us.png')}}"/>
 
     <div class="jumbotron">
       <div class="container">
         <h2>Thank you</h2>
-        <p>Please enter your unique identifier and click below to continue to Twitter. After logging in you'll be asked to approve the app that will share information with Humboldt Universität zu Berlin.</p>
+        <p>Please enter your unique identifier and click below to continue to Twitter. After logging in you'll be asked to approve the app that will share information with Princeton University.</p>
         <form action="{{ url_for('gototwitter') }}">
           <p><input type="text" name="respondent_id", id="respondent_id", placeholder="Please enter ID" value=" {{ respondent_id }}"/></p>
           <p><input type=submit value="Log in using twitter &raquo;" class="btn btn-primary btn-lg" role="button"></p>
@@ -36,7 +36,7 @@
       <div class="row">
         <div class="col-md-4">
           <h2>Privacy Policy</h2>
-          <p>It is your choice to share or not share information with Humboldt Universität zu Berlin. <a href='{{ url_for("privacy") }}'>Read more in our privacy policy.</a> </p>
+          <p>It is your choice to share or not share information with Princeton University. <a href='{{ url_for("privacy") }}'>Read more in our privacy policy.</a> </p>
        </div>
       </div>
 
