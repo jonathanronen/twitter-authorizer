@@ -36,7 +36,7 @@ PyJWT==1.5.2
 pymongo==3.4.0
 pyOpenSSL==16.2.0
 PySocks==1.6.7
-PyYAML==3.12
+PyYAML==5.4
 requests==2.18.2
 requests-oauthlib==0.8.0
 scandir==1.5
